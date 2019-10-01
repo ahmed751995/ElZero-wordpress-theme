@@ -26,7 +26,12 @@
 
     }
 
+    function navigation_bar() {
+        register_nav_menu('nav-menu', __('Navigation bar'));
+    }
+
     add_action('wp_enqueue_scripts', 'import_style');
     add_action('wp_enqueue_scripts', 'import_script');
+    add_action('init', 'navigation_bar');
 
 ?>
