@@ -43,12 +43,26 @@
                                 } ?>
                             </div>
                         </div>
+                        
                     </div>  
         <?php
                 }// end while loob
             } // end if condition
+            echo '<div class="col-12 post-pagination">';
+            if(get_previous_posts_link()) {
+                previous_posts_link('<i class="fa fa-chevron-circle-left fa-fw"></i> Prev');
+            } else {
+                echo "";
+            }
+            if(get_next_posts_link()) {
+                next_posts_link('Next <i class="fa fa-chevron-circle-right fa-fw"></i>');
+            } else {
+                echo '';
+            }
+            echo "</div>"
         ?>
     </div>
+
 </div>
 <!-- 
 <div class="container">
