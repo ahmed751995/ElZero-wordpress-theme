@@ -37,14 +37,16 @@ body {
 }
 
 .post-pagination {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .post-pagination > * {
     background: #0056b3;
     margin: 1rem;
     padding: 0.7rem;
-    border-radius: 9%;
+    border-radius: 4%;
     color:white;
 }
 

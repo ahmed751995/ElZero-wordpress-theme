@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <div class="container">
     <div class="row m-4">
         <?php
@@ -50,12 +49,12 @@
             } // end if condition
             echo '<div class="col-12 post-pagination">';
             if(get_previous_posts_link()) {
-                previous_posts_link('<i class="fa fa-chevron-circle-left fa-fw"></i> Prev');
+                previous_posts_link('<i class="fa fa-chevron-circle-right fa-fw"></i> Prev');
             } else {
                 echo "";
             }
             if(get_next_posts_link()) {
-                next_posts_link('Next <i class="fa fa-chevron-circle-right fa-fw"></i>');
+                next_posts_link('Next <i class="fa fa-chevron-circle-left fa-fw"></i>');
             } else {
                 echo '';
             }
@@ -64,27 +63,6 @@
     </div>
 
 </div>
-<!-- 
-<div class="container">
-    <div class="row m-4">
-        <div class="col-12 col-sm-6">
-            <div class="main-post bg-white m-2 p-3">
-                <h3 class="post-title text-primary">Calculus summary 1</h3>
-                <span class="post-author"><i class="far fa-edit"></i> Ahmed</span>
-                <span class="post-date"> <i class="far fa-calendar-alt"></i> 3/4/2015 </span>
-                <span class="post-comment"><i class="far fa-comments"></i> 17 comments</span>
-                <img src="https://c8.alamy.com/comp/JMXAB4/calculus-text-with-geometric-shapes-against-image-of-ac-chalkboard-JMXAB4.jpg"
-                    alt="math image" class="post-img d-block p-2 img-thumbnail rounded p-2">
-                 <p class="post-content text-dark mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quae
-                    modi hic at accusamus! Doloremque totam, veritatis eum harum odio officiis, eius earum consectetur
-                    ipsum, praesentium nemo possimus molestias dolorum repellendus dolor eos quis hic ab voluptas neque
-                    quam quia libero ea.</p>
-                <hr>
-                <p class="categories text-success"><i class="fas fa-tags"></i> Math, Calculus</p>
-            </div>
-        </div>
-    </div>
-</div> -->
 
 
 <?php get_footer(); ?>
