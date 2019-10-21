@@ -54,19 +54,19 @@
             } // end if condition
             echo '<div class="col-12 post-pagination">';
             if(get_previous_post_link()) {
-                previous_post_link('%link','<i class="fa fa-chevron-circle-right fa-fw"></i> %title');
+                previous_post_link('%link','<i class="fa fa-chevron-circle-left fa-fw"></i> %title');
             } else {
                 echo "";
             }
             if(get_next_post_link()) {
-                next_post_link('%link','%title <i class="fa fa-chevron-circle-left fa-fw"></i>');
+                next_post_link('%link','%title <i class="fa fa-chevron-circle-right fa-fw"></i>');
             } else {
                 echo '';
             }
             echo "</div>"
         ?>
     </div>
-
+    <?php comments_template(); ?>
 </div>
 
 <?php get_footer(); ?>
